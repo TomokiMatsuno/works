@@ -1,0 +1,8 @@
+def rewrite(a,first_index,last_index)
+  if first_index <= last_index
+    a[first_index] = "WOVN#{first_index}"
+    a[last_index] = "WOVN#{last_index}"
+    rewrite(a,first_index+1,last_index-1)
+  end
+  a
+end
